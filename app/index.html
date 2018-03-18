@@ -14,23 +14,9 @@
   <link rel="stylesheet" href="app.css">
 
 </head>
-<body ng-app="myNewApp" ng-controller="mainController">
-<input type="text" ng-model="myTasks" /> <br/>
-<div id="taskList">
-  <div ng-repeat="task in taskList" >
-    
-    <label class="description">
-    <input type="checkbox" ng-model="task.statusDone" />
-      {{task.taskname}}
-    </label>
-  </div>
-</div>
-
+<body ng-app="myNewApp">
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="app.js"></script>
-  <script src="controller.js"></script>
-
-
 </body>
 </html>
