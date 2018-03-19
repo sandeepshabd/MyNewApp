@@ -1,0 +1,17 @@
+<h1>Insurance plans</h1>
+<div>
+	<div id="insurancePlans">
+		<label>
+				Select your plan:
+			</label><br/>
+		<div ng-repeat="plan in planList">
+			
+			<input type="checkbox" ng-model="plan.selected" /> {{plan.planName}}
+		</div>
+	</div>
+	
+<button ng-click="planSelected()" >
+  Plan Selected
+</button>
+
+</div>

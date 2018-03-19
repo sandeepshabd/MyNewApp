@@ -5,7 +5,7 @@ describe("Unit test:Testing Main controller", function(){
 	var controller;
 
 
-	beforeEach(module('myNewApp.mainController'));
+	beforeEach(module('myNewApp'));
 	beforeEach(inject(function($rootScope, $controller){
 		scope = $rootScope.$new();
 		controller = $controller('MainController',{
@@ -17,6 +17,7 @@ describe("Unit test:Testing Main controller", function(){
    describe("$scope.moduleTitle", function(){
    		it("validate $scope.moduleTitle to be ToDo list ", function(){
    			expect(scope.showModule).toBe(true);
+   			expect(scope.planList.length).toBe(4);
    		});
 
    });
